@@ -30,20 +30,20 @@
 import { computed } from 'vue'
 import { useRoute, useRouter } from 'vue-router'
 import { 
-  HomeFilled, 
+  Home, 
   Collection, 
   VideoCamera, 
-  UserFilled 
+  User 
 } from '@element-plus/icons-vue'
 
 const route = useRoute()
 const router = useRouter()
 
 const menuItems = [
-  { path: '/', label: '首页', icon: HomeFilled },
+  { path: '/', label: '首页', icon: Home },
   { path: '/library', label: '字帖库', icon: Collection },
   { path: '/courses', label: '指导课程', icon: VideoCamera },
-  { path: '/profile', label: '我的', icon: UserFilled }
+  { path: '/profile', label: '我的', icon: User }
 ]
 
 const isActive = (path) => {
