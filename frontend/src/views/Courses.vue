@@ -121,7 +121,7 @@
               <el-row :gutter="24">
                 <el-col :span="8" v-for="feature in oneOnOneFeatures" :key="feature.id">
                   <div class="feature-card card">
-                    <el-icon :size="48" :color="var(--primary-color)">
+                    <el-icon :size="48" color="var(--primary-color)">
                       <component :is="feature.icon" />
                     </el-icon>
                     <h3 class="feature-title">{{ feature.title }}</h3>
