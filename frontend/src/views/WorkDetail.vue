@@ -133,7 +133,7 @@
                   <p class="comment-text">{{ comment.content }}</p>
                   <div class="comment-actions">
                     <span class="action-item" @click="likeComment(comment)">
-                      <el-icon><ThumbUp /></el-icon>
+                      <el-icon><Promotion /></el-icon>
                       {{ comment.likes }}
                     </span>
                     <span class="action-item">
@@ -228,7 +228,7 @@ import {
   Star,
   Collection,
   Share,
-  ThumbUp
+  Promotion
 } from '@element-plus/icons-vue'
 
 const route = useRoute()

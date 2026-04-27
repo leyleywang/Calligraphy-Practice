@@ -253,7 +253,7 @@
                     <span class="post-date">{{ post.date }}</span>
                   </div>
                   <el-dropdown>
-                    <el-icon><MoreFilled /></el-icon>
+                    <el-icon><More /></el-icon>
                     <template #dropdown>
                       <el-dropdown-menu>
                         <el-dropdown-item @click="editPost(post)">编辑</el-dropdown-item>
@@ -307,7 +307,7 @@
         :on-change="handleFileChange"
         accept="image/*"
       >
-        <el-icon class="el-icon--upload"><UploadFilled /></el-icon>
+        <el-icon class="el-icon--upload"><Upload /></el-icon>
         <div class="el-upload__text">
           将文件拖到此处，或<em>点击上传</em>
         </div>
@@ -380,10 +380,9 @@ import {
   Check,
   TrendCharts,
   EditPen,
-  MoreFilled,
+  More,
   ChatDotRound,
-  Star,
-  UploadFilled
+  Star
 } from '@element-plus/icons-vue'
 
 const router = useRouter()
